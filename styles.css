@@ -682,13 +682,10 @@ button {
   border-bottom-left-radius: 2.5rem;
   border-bottom-right-radius: 2.5rem;
   background-color: #F8F5F2;
-  background-image: url("/images/paperbg.png");
   background-repeat: repeat;
   background-position: center;
   background-size: 160px 160px; }
-  @media (min-device-pixel-ratio: 2) {
-    .Nav {
-      background-image: url("/images/paperbg@2x.png"); } }
+
   @media screen and (max-width: 600px) {
     .Nav {
       justify-content: space-around; } }
@@ -703,10 +700,12 @@ button {
     padding: 0 3rem; }
     @media screen and (max-width: 880px) {
       .Nav-link {
-        padding: 0 2rem; } }
+        padding: 10vh 2rem;
+        font-size: 2rem; 
+      } }
     @media screen and (max-width: 600px) {
       .Nav-link {
-        padding: 0 1rem; }
+        padding: 10vh 1rem; }
         .Nav-link:first-child,
         .Nav-link > span {
           display: none; } }
@@ -746,6 +745,11 @@ button {
     font-size: 1.3rem;
     line-height: 1.5;
     color: #041a52; }
+    @media screen and (max-width: 880px) {
+      .AboutUs-story {
+        font-size: 1.3rem;
+      }
+     }
     .AboutUs-story-section {
       animation: section-fade-in 500ms ease 1; }
       .AboutUs-story-section-text {
@@ -761,7 +765,6 @@ button {
       .AboutUs-story-section-photo {
         display: block;
         flex-shrink: 0;
-        /* width: 12rem; */
         height: 12rem;
         padding: 0.5rem;
         margin: 1rem 2rem;
@@ -774,21 +777,32 @@ button {
           float: right;
           order: 2;
           margin-right: 0; }
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 880px) {
           .AboutUs-story-section-photo {
-            width: 10rem;
-            height: 10rem;
+            height: auto;
             padding: 0.5rem;
             margin: 1.5rem;
             max-width: 33vw; } 
             .AboutUs-story {
-              font-size: 3rem;
+              font-size: 2rem;
             }
+            .AboutUs-story-section-photo.is-dale {
+              float:none;
+              overflow: visible;
+            }  
           }
         .AboutUs-story-section-photo img {
+          width:auto;
+          background-position: center; 
+          position: relative;
           display: block;
-          width: 100%;
           height: 100%; }
+      @media screen and (max-width: 880px) {
+        .AboutUs-story-section-photo img {
+          width:80vw;
+          height: auto; 
+        }
+        }
   .AboutUs-next {
     display: flex;
     align-items: center;
@@ -972,6 +986,13 @@ button {
     .Details-title span {
       padding: 0 1vmin;
     }
+    @media screen and (max-width: 880px) {
+      .Details-title {
+        font-size: 5rem; }
+        .Details-title span {
+          padding: 0 2vmin;
+        }  
+    }
   .Details-location {
     margin-bottom: 3rem;
     filter: drop-shadow(1px 1px rgba(255, 255, 255, 0.5)) drop-shadow(-1px -1px rgba(0, 0, 0, 0.1)); }
@@ -1015,6 +1036,7 @@ button {
         display: block; } }
   .Details-images {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 100vw;
@@ -1035,19 +1057,22 @@ button {
         max-width: none;
         width: 100%; }
         .Details-images-image {
-          width: auto;
+          max-width: 40vw;
           height: 40vh;
           max-height: 200px;
           margin-left: 0;
           margin-right: 2rem; } }
     @media screen and (max-width: 600px) {
       .Details-images {
-        flex-direction: column; }
+        flex-direction: column;
+        align-items: center; }
         .Details-images-image {
-          height: auto;
+          max-width: 100vw;
           max-height: none;
-          width: 100%;
-          height: auto; } }
+          width:80vw;
+          height: 100%;
+          margin-right: 0;
+        } }
 
 .st2 {
   fill: currentColor;
@@ -1097,7 +1122,8 @@ button {
     filter: drop-shadow(1px 1px rgba(255, 255, 255, 0.5)) drop-shadow(-1px -1px rgba(0, 0, 0, 0.1)); }
     @media screen and (max-width: 880px) {
       .RSVPs-text {
-        font-size: 10vmin; } }
+        font-size: 15vmin;
+        max-width: 40vw } }
     .RSVPs-text > span {
       padding: 0 1.5vmin; }
   .RSVPs-button {
