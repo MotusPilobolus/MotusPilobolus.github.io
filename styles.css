@@ -539,6 +539,27 @@ button {
             width: 2vmin;
             height: 2vmin; } }
 
+      div.AboutUs#FAQ-details .Hero-stars div {
+        height:100%; 
+        display:flex; 
+        justify-content: space-between; 
+      }
+      @media screen and (max-width: 880px) {
+        #details-padding p:nth-child(1) {
+          padding: 0 18% 0 18%;
+        } 
+        div.AboutUs#FAQ-details .Hero-stars div {
+          align-items: flex-start;
+          padding-top: 15vh;
+        }
+      }
+
+      @media screen and (max-width: 1150px) {
+        #details-padding p:nth-child(-n+3) {
+          padding: 0 18% 0 18%;
+        } 
+      }
+
 @keyframes star-twinkle {
   0%,
   100% {
@@ -847,109 +868,109 @@ button {
         font-size: 3rem;
         font-family: "Vigneta", serif; } */
 
-.Motel {
-  position: relative;
-  margin: 0 auto;
-  padding: 20vh 5rem;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .Motel-anchor {
-    position: absolute;
-    top: 10vh; }
-  @media screen and (max-width: 880px) {
-    .Motel {
-      text-align: left;
-      flex-direction: column-reverse;
-      justify-content: flex-start; } }
-  @media screen and (max-width: 600px) {
-    .Motel {
-      padding-left: 2rem;
-      padding-right: 2rem; } }
-  .Motel-inner {
-    padding-left: 5rem; }
-    @media screen and (max-width: 880px) {
-      .Motel-inner {
-        padding-left: 0; } }
-  .Motel-title {
-    font-size: 5.5rem;
-    margin: -1.5rem 0 2rem;
-    font-family: "Vigneta", serif;
-    color: #041a52;
-    filter: drop-shadow(1px 1px rgba(255, 255, 255, 0.5)) drop-shadow(-1px -1px rgba(0, 0, 0, 0.1)); }
-  .Motel-location {
-    margin-bottom: 3rem;
-    filter: drop-shadow(1px 1px rgba(255, 255, 255, 0.5)) drop-shadow(-1px -1px rgba(0, 0, 0, 0.1)); }
-    .Motel-location-name {
-      font-size: 3.5rem;
-      margin-bottom: 0.5rem; }
-    .Motel-location-address {
-      font-size: 1.5rem; }
-  .Motel-description {
-    width: 50vw;
-    max-width: 580px;
-    margin-bottom: 2rem;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    filter: drop-shadow(1px 1px rgba(255, 255, 255, 0.5)) drop-shadow(-1px -1px rgba(0, 0, 0, 0.1)); }
-    @media screen and (max-width: 880px) {
-      .Motel-description {
-        width: 100%;
-        max-width: none; } }
-  .Motel-link {
-    padding: 1.5rem 3rem;
-    font-size: 1.4rem;
-    display: inline-block;
-    text-align: center;
-    background: #041a52;
-    color: #fff;
-    text-decoration: none;
-    box-shadow: 0 0 0 4px inset #041a52, 0 0 0 6px inset #fff; }
-    .Motel-link:hover, .Motel-link:focus {
-      background: #09200C; }
-    .Motel-link:active {
-      background: #09200C; }
-    @media screen and (max-width: 600px) {
-      .Motel-link {
-        display: block;
-        width: 100%; } }
-  .Motel-images {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 35vw; }
-    .Motel-images-image {
-      display: block;
-      max-width: 100%;
-      margin: 1rem;
-      padding: 0.5rem;
-      background: #FFF;
-      box-shadow: 0 2px 4px rgba(13, 68, 69, 0.2); }
-    @media screen and (max-width: 880px) {
-      .Motel-images {
-        margin-top: 2rem;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        max-width: none;
-        width: 100%; }
-        .Motel-images-image {
-          width: auto;
-          height: 40vh;
-          max-height: 200px;
-          margin-left: 0;
-          margin-right: 2rem; } }
-    @media screen and (max-width: 600px) {
-      .Motel-images {
-        flex-direction: column; }
-        .Motel-images-image {
-          height: auto;
-          max-height: none;
-          width: 100%;
-          height: auto; } }
-
+        .Motel {
+          position: relative;
+          margin: 0 auto;
+          padding: 20vh 5rem;
+          text-align: left;
+          display: flex;
+          align-items: normal;
+          justify-content: center; }
+          .Motel-anchor {
+            position: absolute;
+            top: 10vh; }
+          @media screen and (max-width: 880px) {
+            .Motel {
+              text-align: left;
+              flex-direction: column-reverse;
+              justify-content: flex-start; } }
+          @media screen and (max-width: 600px) {
+            .Motel {
+              padding-left: 2rem;
+              padding-right: 2rem; } }
+          .Motel-inner {
+            padding-left: 5rem; }
+            @media screen and (max-width: 880px) {
+              .Motel-inner {
+                padding-left: 0; } }
+          .Motel-title {
+            font-size: 5.5rem;
+            margin: -1.5rem 0 2rem;
+            font-family: "Vigneta", serif;
+            color: #041a52;
+            filter: drop-shadow(1px 1px rgba(255, 255, 255, 0.5)) drop-shadow(-1px -1px rgba(0, 0, 0, 0.1)); }
+          .Motel-location {
+            margin-bottom: 3rem;
+            filter: drop-shadow(1px 1px rgba(255, 255, 255, 0.5)) drop-shadow(-1px -1px rgba(0, 0, 0, 0.1)); }
+            .Motel-location-name {
+              font-size: 3.5rem;
+              margin-bottom: 0.5rem; }
+            .Motel-location-address {
+              font-size: 1.5rem; }
+          .Motel-description {
+            width: 50vw;
+            max-width: 580px;
+            margin-bottom: 2rem;
+            font-size: 1.4rem;
+            line-height: 1.5;
+            filter: drop-shadow(1px 1px rgba(255, 255, 255, 0.5)) drop-shadow(-1px -1px rgba(0, 0, 0, 0.1)); }
+            @media screen and (max-width: 880px) {
+              .Motel-description {
+                width: 100%;
+                max-width: none; } }
+          .Motel-link {
+            padding: 1.5rem 3rem;
+            font-size: 1.4rem;
+            display: inline-block;
+            text-align: center;
+            background: #041a52;
+            color: #fff;
+            text-decoration: none;
+            box-shadow: 0 0 0 4px inset #041a52, 0 0 0 6px inset #fff; }
+            .Motel-link:hover, .Motel-link:focus {
+              background: #09200C; }
+            .Motel-link:active {
+              background: #09200C; }
+            @media screen and (max-width: 600px) {
+              .Motel-link {
+                display: block;
+                width: 100%; } }
+          .Motel-images {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 35vw; }
+            .Motel-images-image {
+              display: block;
+              max-width: 100%;
+              margin: 1rem;
+              padding: 0.5rem;
+              background: #FFF;
+              box-shadow: 0 2px 4px rgba(13, 68, 69, 0.2); }
+            @media screen and (max-width: 880px) {
+              .Motel-images {
+                margin-top: 2rem;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                max-width: none;
+                width: 100%; }
+                .Motel-images-image {
+                  width: auto;
+                  height: 40vh;
+                  max-height: 200px;
+                  margin-left: 0;
+                  margin-right: 2rem; } }
+            @media screen and (max-width: 600px) {
+              .Motel-images {
+                flex-direction: column; }
+                .Motel-images-image {
+                  height: auto;
+                  max-height: none;
+                  width: 100%;
+                  height: auto; } }
+        
 .Details {
   position: relative;
   min-height: 100vh;
@@ -1074,6 +1095,16 @@ button {
           margin-right: 0;
         } }
 
+      .D-link {
+        font-size: 3rem;
+        text-decoration: none;
+        text-align: center;
+        color: #041a52; }
+        @media screen and (max-width: 880px) {
+          .D-link {
+            font-size: 2rem; 
+          } }
+
 .st2 {
   fill: currentColor;
 }
@@ -1122,7 +1153,7 @@ button {
     filter: drop-shadow(1px 1px rgba(255, 255, 255, 0.5)) drop-shadow(-1px -1px rgba(0, 0, 0, 0.1)); }
     @media screen and (max-width: 880px) {
       .RSVPs-text {
-        font-size: 15vmin;
+        font-size: 6rem;
         max-width: 40vw } }
     .RSVPs-text > span {
       padding: 0 1.5vmin; }
@@ -1339,3 +1370,45 @@ button {
   to {
     transform: rotate(360deg); } }
 
+    .collapsible {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    
+    .active, .collapsible:hover {
+      background-color: #ccc;
+    }
+   
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+
+    .content {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+
+    .collapsible:after {
+      content: '\02795'; /* Unicode character for "plus" sign (+) */
+      font-size: 13px;
+      color: white;
+      float: right;
+      margin-left: 5px;
+    }
+    
+    .active:after {
+      content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }

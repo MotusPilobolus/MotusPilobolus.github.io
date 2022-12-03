@@ -7,9 +7,7 @@
   <meta name="description" content="Graham and Kayla are getting married!" />
   <meta property="og:title" content="Graham & Kayla" />
   <meta property="og:image" content="" />
-  <link rel="shortcut icon" href="/favicon/favicon.ico" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" / <meta name="viewport"
+  <meta name="viewport"
     content="width=device-width, initial-scale=1" />
   <script>
     !function (w, d) { function e(e, i) { w.ServiceBell.q = w.ServiceBell.q || [], w.ServiceBell.q.push([e, i]) } w.ServiceBell = w.ServiceBell || ["init", "identify", "dial", "alert", "bookMeeting", "hide", "show"].reduce((function (i, c) { return i[c] = function () { e(c, arguments) }, i }), {}); var s = d.createElement("script"); s.id = "service-bell-script", s.src = "https://cdn.getservicebell.com/main.js", s.async = 1; var i = d.getElementsByTagName("script")[0]; i.parentNode.insertBefore(s, i) }(window, document);
@@ -31,14 +29,14 @@
 <body>
   <div id="__next">
     <div>
-      <div style="overflow:hidden">
+      <div id="MainHeroDiv" style="overflow:hidden">
         <div class="Hero">
           <div class="Nav">
             <a class="Nav-link" href="/">Home</a>
-            <a href="#about" class="Nav-link">About<span> Us</span></a>
+            <a href="#about" class="Nav-link"><span>Our </span>Story</a>
             <a href="#wedding" class="Nav-link"><span>The </span>Wedding</a>
-            <!-- <a href="#motel" class="Nav-link"><span>Your </span>Stay</a>
-            <a class="Nav-button" href="/rsvp">RSVP</a> -->
+            <a href="#motel" class="Nav-link"><span>Your </span>Stay</a>
+            <a class="Nav-button" href="https://www.zola.com/wedding/forgrahamsure/rsvp">RSVP</a>
           </div>
 
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="Hero-title"
@@ -451,9 +449,6 @@
                 C191.2,24.4,192.3,21.8,191.5,19.9z"/>            
             </g>
           </svg>
-          <a class="Hero-scrollTip " href="#about">
-            <span>Come</span><span>on</span><span>down!</span>
-          </a>
           <div class="ShootingStar" style="top:10%;left:30%;animation-delay:5100ms">
             <div class="ShootingStar-tail" style="animation-delay:5100ms"></div>
           </div>
@@ -695,10 +690,6 @@
               </p>
 
             </div>
-            <!-- <button class="AboutUs-next">
-              <span>Aww! Wait... cats?</span>
-              <span class="AboutUs-next-arrow">⇢</span>
-            </button> -->
           </div>
         </div>
       </div>
@@ -789,9 +780,11 @@
         <div class="Details-inner">
           <h2 class="Details-title">The Wedding</h2>
           <div class="Details-location">
-            <div class="Details-location-name">The Pump House</div> 
+            <div class="Details-location-name">
+              <a class="D-link" href="#">The Pump House</a>
+            </div> 
             <div class="Details-location-city">
-              Bloomsburg, PA · May 27, 2023
+              Bloomsburg, PA · May 27, 2023 · 3pm
           </div>
         </div>
         <div class="Details-desc">
@@ -1050,64 +1043,82 @@
                 </g>
               </g>
             </svg>
-            <span>More details coming soon</span>
+            <span>Invitations coming soon!</span>
           </div>
-          <a class="Details-link" href="http://www.pumphousebandb.com/" target="_blank">
-            Check Out the Venue
-          </a>
         </div>
       </div>
       <div class="Details-images">
         <img class="Details-images-image" src="/images/venue-3.jpeg"/><img class="Details-images-image"
           src="/images/venue-4.jpeg" /></div>
     </div>
-    <!-- <div class="Motel">
+    <div class="AboutUs" id="FAQ-details">
+      <div class="AboutUs-anchor" id="more-details"></div>
+      <div class="AboutUs-story">
+        <h2 class="Details-title" style="text-align: center;"><span>Important</span><span>Details</span></h2>
+        <div class="AboutUs-story-section" id="details-padding">
+          <p class="AboutUs-story-section-text">
+            <strong >The dress code is Garden Party Attire!</strong> </br>
+              We would love to see your best colorful frocks, floral prints, or whatever whimsical attire you feel your best and brightest in! If you're looking for a nudge, wearing bright colors is encouraged.
+          </p>
+          <p class="AboutUs-story-section-text">
+            <strong>There is a shuttle bus and limited parking at the venue.</strong> </br>
+              To encourage a safe, fun, and festive evening, we will have a shuttle bus taking folks to the venue and then back at the end of the night. If you don't think your dancing shoes will hold out that long, there is limited parking at the venue - please do let us know what your plans are for transportation on your RSVP!
+          </p>
+          <p class="AboutUs-story-section-text">
+            <strong>There is camping on site!</strong> </br>
+              For those who like to sleep under the stars, there are limited spots for free camping on site with us Saturday into Sunday. Access includes a modern shared bathroom facility.
+          </p>
+          <p class="AboutUs-story-section-text">
+            <strong>This is a child-free event.</strong> </br>
+            To allow all wedding guests, including parents, a night of relaxation and uninhibited revelry, we respectfully ask that no children attend the reception.
+          </p>
+        </div>
+      </div>
+      <div class="Hero-stars">
+        <div>
+          <img src="/images/trees02.svg" width="15%">
+          <img src="/images/trees01.svg" width="15%">
+        </div>
+      </div>
+    </div>
+    <div class="Motel">
       <div class="Motel-anchor" id="motel">
         <h2 class="Motel-title">Local Stays</h2>
       </div>
       <div class="Motel-images">
-        <img class="Motel-images-image" src="https://static.wixstatic.com/media/3d7148_1d94b44cb2634eb88fca70fcdb9eafdc~mv2.jpg" />
-        <img class="Motel-images-image" src="https://digital.ihg.com/is/image/ihg/holiday-inn-express-bloomsburg-5231380153-2x1" />
-        <img class="Motel-images-image" src="https://www.choicehotels.com/hotelmedia/US/PA/bloomsburg/PA143/1280/PA143Exterior2_1.webp" />
+        <img class="Motel-images-image" src="https://static.wixstatic.com/media/3d7148_1d94b44cb2634eb88fca70fcdb9eafdc~mv2.jpg">
+        <img class="Motel-images-image" src="https://digital.ihg.com/is/image/ihg/holiday-inn-express-bloomsburg-5231380153-2x1">
+        <img class="Motel-images-image" src="https://www.choicehotels.com/hotelmedia/US/PA/bloomsburg/PA143/1280/PA143Exterior2_1.webp">
       </div>
       <div class="Motel-inner">
         <div class="Motel-location">
           <div class="Motel-location-name">Elmdale Inn</div>
           <div class="Motel-location-address">503 Market St, Bloomsburg, PA</div>
         </div>
-        <div class="Motel-description">The Elmdale Inn is new to Bloomsburg (we love a pandemic small business!). It's a small bed and breakfast with gorgeous gardens and antique furniture. For those who love the finer things in life. </div><a class="Motel-link"
-          href="https://www.elmdaleinn.com/"
-          target="_blank">Book Here</a>
+        <div class="Motel-description">The Elmdale Inn is new to Bloomsburg (we love a pandemic small business!). It's a small bed and breakfast with gorgeous gardens and antique furniture. For those who love the finer things in life. </div><a class="Motel-link" href="https://www.elmdaleinn.com/" target="_blank">Book Here</a>
 
           <div class="Motel-location" style="margin-top:100px;">
-            <div class="Motel-location-name">Holiday Inn <br /> Express Bloomsburg</div>
+            <div class="Motel-location-name">Holiday Inn <br> Express Bloomsburg</div>
             <div class="Motel-location-address">14 Mitchell Dr, Bloomsburg, PA</div>
           </div>
-          <div class="Motel-description">The Holiday Inn Express Bloomsburg is a great pick for those looking for a pool and other modern amenities at a mid-level price point.</div><a class="Motel-link"
-            href="https://www.ihg.com/holidayinnexpress/hotels/us/en/bloomsburg/blbpa/hoteldetail"
-            target="_blank">Book Here</a>
+          <div class="Motel-description">The Holiday Inn Express Bloomsburg is a great pick for those looking for a pool and other modern amenities at a mid-level price point.</div><a class="Motel-link" href="https://www.ihg.com/holidayinnexpress/hotels/us/en/bloomsburg/blbpa/hoteldetail" target="_blank">Book Here</a>
 
             <div class="Motel-location" style="margin-top:100px;">
               <div class="Motel-location-name">Quality Inn Bloomsburg</div>
               <div class="Motel-location-address">189 Columbia Mall Dr, Bloomsburg, PA</div>
             </div>
-            <div class="Motel-description">The Quality Inn Bloomsburg is a great pick for those looking for a place to lay their heads after a long night under the stars with us, no frills attached, at a price that can't be beat.</div><a class="Motel-link"
-              href="https://www.choicehotels.com/pennsylvania/bloomsburg/quality-inn-hotels/pa143"
-              target="_blank">Book Here</a>
+            <div class="Motel-description">The Quality Inn Bloomsburg is a great pick for those looking for a place to lay their heads after a long night under the stars with us, no frills attached, at a price that can't be beat.</div><a class="Motel-link" href="https://www.choicehotels.com/pennsylvania/bloomsburg/quality-inn-hotels/pa143" target="_blank">Book Here</a>
       </div>
-    </div> -->
-    
+    </div>
     <div id="RSVP-modal" style="overflow:hidden">
       <div class="RSVPs">
         <div class="RSVPs-border"></div>
         <div class="RSVPs-text">
-          
-          <!-- <span>What&#x27;re</span><span>you</span><span>waiting</span><span>for?</span></div><a
-          class="RSVPs-button" href="/rsvp">RSVP</a> -->
-
-          <span>We</span><span>can&#x27;t</span><span>wait</span><span>to</span><span>see</span><span>you!</span></div><a
-          class="RSVPs-button" href="#">RSVP SOON</a>
-
+          <span>What&#x27;re</span><span>you</span><span>waiting</span><span>for?</span></div>
+          <a class="RSVPs-button" href="https://www.zola.com/wedding/forgrahamsure/rsvp">RSVP</a>
+          <div>
+            <p style="font-size: 1.3rem; color: #041a52; margin-bottom: 3rem; text-shadow: 1px 1px #fff; max-width: 60vw; text-align: center; background-color: #F8F5F2"><i>We kindly ask that you let us know your plans by April 21, 2023. Thank you!</i></p>
+          </div>
         <div class="ShootingStar" style="top:10%;left:30%;animation-delay:4106ms">
           <div class="ShootingStar-tail" style="animation-delay:4106ms"></div>
         </div>
