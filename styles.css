@@ -760,12 +760,15 @@ button {
     position: absolute;
     top: 15vh; }
   .AboutUs-story {
-    max-width: 60rem;
+    max-width: 70rem;
     padding: 0 2rem;
     margin: 0 auto;
     font-size: 1.3rem;
     line-height: 1.5;
-    color: #041a52; }
+    color: #041a52; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;}
     @media screen and (max-width: 880px) {
       .AboutUs-story {
         font-size: 1.3rem;
@@ -776,7 +779,7 @@ button {
       .AboutUs-story-section-text {
         order: 1;
         padding-top: 1rem;
-        margin-bottom: 3rem;
+        
         text-shadow: 1px 1px #fff; }
         .AboutUs-story-section-text a {
           color: #041a52;
@@ -1000,7 +1003,7 @@ button {
         width: 100%; } }
   .Details-title {
     font-size: 3.5rem;
-    margin: -1.5rem 0 2rem;
+    margin: -1.5rem 0;
     font-family: "Vigneta", serif;
     color: #041a52;
     filter: drop-shadow(1px 1px rgba(255, 255, 255, 0.5)) drop-shadow(-1px -1px rgba(0, 0, 0, 0.1)); }
