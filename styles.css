@@ -393,7 +393,7 @@ button {
     position: absolute;
     width: auto;
     height: auto;
-    top: 50%;
+    top: 60%;
     left: 43%;
     transform: translate(-50%, -50%);
     animation-fill-mode: both;
@@ -766,6 +766,7 @@ button {
     font-size: 1.3rem;
     line-height: 1.5;
     color: #041a52; 
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;}
