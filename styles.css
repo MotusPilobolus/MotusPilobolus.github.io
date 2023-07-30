@@ -393,7 +393,7 @@ button {
     position: absolute;
     width: auto;
     height: auto;
-    top: 25%;
+    top: 28%;
     left: 43%;
     transform: translate(-50%, -50%);
     animation-fill-mode: both;
@@ -446,7 +446,7 @@ button {
 @keyframes ribbon-slide-up {
   0% {
     opacity: 0;
-    transform: translate(-50%, -50%) translateY(30vh); }
+    transform: translate(-50%, -50%) translateY(20vh); }
   40% {
     opacity: 1; }
   100% {
